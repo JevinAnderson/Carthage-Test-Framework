@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Carthage_Test_Framework
 
 class ViewController: UIViewController {
-
+  @IBOutlet var header: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    header.text = cftRandomString(100)
   }
 
 
