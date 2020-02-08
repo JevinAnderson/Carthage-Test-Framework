@@ -14,6 +14,7 @@
 		65B52B4D23EE2A3B00492CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B52B4C23EE2A3B00492CDF /* Assets.xcassets */; };
 		65B52B5023EE2A3B00492CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B52B4E23EE2A3B00492CDF /* LaunchScreen.storyboard */; };
 		65B52B5823EE2C3400492CDF /* CTFRandomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B52B5723EE2C3400492CDF /* CTFRandomString.swift */; };
+		65B52B5F23EE7BB200492CDF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B52B5E23EE7BB200492CDF /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		65B52B4F23EE2A3B00492CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B52B5123EE2A3B00492CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B52B5723EE2C3400492CDF /* CTFRandomString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTFRandomString.swift; sourceTree = "<group>"; };
+		65B52B5E23EE7BB200492CDF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B52B5F23EE7BB200492CDF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 				65B52B3623EE294D00492CDF /* Carthage Test Framework */,
 				65B52B4423EE2A3A00492CDF /* Sample app */,
 				65B52B3523EE294D00492CDF /* Products */,
+				65B52B5D23EE7BB200492CDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +103,14 @@
 			path = "Sample app";
 			sourceTree = "<group>";
 		};
+		65B52B5D23EE7BB200492CDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65B52B5E23EE7BB200492CDF /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -121,6 +133,7 @@
 				65B52B3023EE294D00492CDF /* Sources */,
 				65B52B3123EE294D00492CDF /* Frameworks */,
 				65B52B3223EE294D00492CDF /* Resources */,
+				65B52B6023EE7DE100492CDF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -206,6 +219,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65B52B6023EE7DE100492CDF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65B52B3023EE294D00492CDF /* Sources */ = {
@@ -388,6 +422,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Carthage Test Framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -415,6 +453,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Carthage Test Framework/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
