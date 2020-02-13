@@ -24,12 +24,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g0-5F-4qx">
+                                <rect key="frame" x="152" y="125" width="110" height="30"/>
+                                <state key="normal" title="Show half sheet"/>
+                                <connections>
+                                    <action selector="showHalfSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VA5-Hg-aAH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8dD-df-b8M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3RU-IP-pae"/>
                             <constraint firstItem="8dD-df-b8M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="DJY-B8-vb9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8dD-df-b8M" secondAttribute="trailing" constant="20" id="VuC-vs-rgN"/>
+                            <constraint firstItem="3g0-5F-4qx" firstAttribute="top" secondItem="8dD-df-b8M" secondAttribute="bottom" constant="20" id="g48-Nb-ZLt"/>
+                            <constraint firstItem="3g0-5F-4qx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="maB-et-Ybj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

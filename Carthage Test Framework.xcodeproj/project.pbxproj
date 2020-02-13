@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		657170A123F22F810016E999 /* HalfSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6571709F23F22F810016E999 /* HalfSheetViewController.swift */; };
+		657170A223F22F810016E999 /* HalfSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 657170A023F22F810016E999 /* HalfSheetViewController.xib */; };
 		65B52B3923EE294D00492CDF /* Carthage_Test_Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B52B3723EE294D00492CDF /* Carthage_Test_Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65B52B4623EE2A3A00492CDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B52B4523EE2A3A00492CDF /* AppDelegate.swift */; };
 		65B52B4823EE2A3A00492CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B52B4723EE2A3A00492CDF /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 		65B52B5023EE2A3B00492CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B52B4E23EE2A3B00492CDF /* LaunchScreen.storyboard */; };
 		65B52B5823EE2C3400492CDF /* CTFRandomString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B52B5723EE2C3400492CDF /* CTFRandomString.swift */; };
 		65B52B5F23EE7BB200492CDF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B52B5E23EE7BB200492CDF /* Alamofire.framework */; };
+		65B52B6323EE7E9600492CDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B52B6123EE7E9600492CDF /* ViewController.swift */; };
+		65B52B6423EE7E9600492CDF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B52B6223EE7E9600492CDF /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6571709F23F22F810016E999 /* HalfSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheetViewController.swift; sourceTree = "<group>"; };
+		657170A023F22F810016E999 /* HalfSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HalfSheetViewController.xib; sourceTree = "<group>"; };
 		65B52B3423EE294D00492CDF /* Carthage_Test_Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Carthage_Test_Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B52B3723EE294D00492CDF /* Carthage_Test_Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Carthage_Test_Framework.h; sourceTree = "<group>"; };
 		65B52B3823EE294D00492CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +46,8 @@
 		65B52B5123EE2A3B00492CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65B52B5723EE2C3400492CDF /* CTFRandomString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTFRandomString.swift; sourceTree = "<group>"; };
 		65B52B5E23EE7BB200492CDF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		65B52B6123EE7E9600492CDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65B52B6223EE7E9600492CDF /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,8 @@
 				65B52B3723EE294D00492CDF /* Carthage_Test_Framework.h */,
 				65B52B3823EE294D00492CDF /* Info.plist */,
 				65B52B5723EE2C3400492CDF /* CTFRandomString.swift */,
+				65B52B6123EE7E9600492CDF /* ViewController.swift */,
+				65B52B6223EE7E9600492CDF /* ViewController.xib */,
 			);
 			path = "Carthage Test Framework";
 			sourceTree = "<group>";
@@ -99,6 +109,8 @@
 				65B52B4C23EE2A3B00492CDF /* Assets.xcassets */,
 				65B52B4E23EE2A3B00492CDF /* LaunchScreen.storyboard */,
 				65B52B5123EE2A3B00492CDF /* Info.plist */,
+				6571709F23F22F810016E999 /* HalfSheetViewController.swift */,
+				657170A023F22F810016E999 /* HalfSheetViewController.xib */,
 			);
 			path = "Sample app";
 			sourceTree = "<group>";
@@ -205,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B52B6423EE7E9600492CDF /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +228,7 @@
 				65B52B5023EE2A3B00492CDF /* LaunchScreen.storyboard in Resources */,
 				65B52B4D23EE2A3B00492CDF /* Assets.xcassets in Resources */,
 				65B52B4B23EE2A3A00492CDF /* Main.storyboard in Resources */,
+				657170A223F22F810016E999 /* HalfSheetViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B52B6323EE7E9600492CDF /* ViewController.swift in Sources */,
 				65B52B5823EE2C3400492CDF /* CTFRandomString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B52B4823EE2A3A00492CDF /* ViewController.swift in Sources */,
+				657170A123F22F810016E999 /* HalfSheetViewController.swift in Sources */,
 				65B52B4623EE2A3A00492CDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

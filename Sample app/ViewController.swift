@@ -16,7 +16,14 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     header.text = cftRandomString(100)
   }
-
-
+  
+  @IBAction func showHalfSheet(_ sender: UIButton) {
+    let vc = HalfSheetViewController(nibName: "HalfSheetViewController", bundle: nil)
+    vc.modalPresentationStyle = .overCurrentContext
+    vc.modalTransitionStyle = .crossDissolve
+    present(vc, animated: true) {
+      vc.finishAfterModalAnimation()
+    }
+  }
 }
 
